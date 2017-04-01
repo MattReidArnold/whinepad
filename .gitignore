@@ -2,4 +2,4 @@
 __deployme/*
 node_modules/*
 js/build/*
-bundle.*
+*bundle.*
