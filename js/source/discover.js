@@ -3,6 +3,7 @@
 import Logo from './components/Logo';
 import Button from './components/Button';
 import Suggest from './components/Suggest';
+import Rating from './components/Rating';
 import React from 'react';
 import ReactDOM from 'react-dom';
 
@@ -22,6 +23,12 @@ ReactDOM.render(
 
         <h2>Suggest</h2>
         <div><Suggest options={['eenie', 'meenie', 'miney', 'mo']} /></div>
+
+        <h2>Rating</h2>
+        <div>No initial value: <Rating /></div>
+        <div>Initial value of 4: <Rating defaultValue={4} /></div>
+        <div>This one goes to 11: <Rating max={11} /></div>
+        <div>Read-only: <Rating readonly={true} defaultValue={3} /></div>
 
     </div>
     ,document.getElementById('pad'));
