@@ -6,6 +6,7 @@ import Suggest from './components/Suggest';
 import Rating from './components/Rating';
 import FormInput from './components/FormInput';
 import Form from './components/Form'
+import Actions from './components/Actions'
 import React from 'react';
 import ReactDOM from 'react-dom';
 
@@ -74,5 +75,9 @@ ReactDOM.render(
             />
         </div>
 
+        <h2>Actions</h2>
+        <div><Actions onAction={type => alert(type)} /></div>
+
     </div>
     ,document.getElementById('pad'));
+    
